@@ -1,0 +1,39 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+/*footer*/
+
+footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-content: flex-end;
+    align-items: center;
+    background-color: #9EFC87;
+}
+
+.iconBox {
+    display: flex;
+    justify-content:flex-start;
+    margin-left: 50px;
+    width: 50%;
+    height: 35px;
+}
+
+.mediaIcons {
+    width: auto;
+    padding:0px 10px;
+}
+
+.copyright {
+    width: auto;
+    margin-right: 50px;
+}
+
+.copyright p {
+    font-family: "Montserrat";
+    color: #0F892A;
+    font-weight: 400;
+    font-size: 18px;
+}
