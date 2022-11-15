@@ -2,6 +2,22 @@
     margin: 0;
     padding: 0;
 }
+
+/*header*/
+
+.mainHeader {
+    background-color: #7EDFFD;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    padding: 5px;
+    justify-content: center;
+}
+
+.siteIdentity img {
+    width: 80px;
+}
+
 /*footer*/
 
 footer {
@@ -37,3 +53,4 @@ footer {
     font-weight: 400;
     font-size: 18px;
 }
+
