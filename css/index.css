@@ -1,0 +1,16 @@
+body {
+    margin: 0px;
+}
+
+.mainHeader {
+    background-color: #7EDFFD;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    padding: 5px;
+    justify-content: center;
+}
+
+.siteIdentity img {
+    width: 80px;
+}
