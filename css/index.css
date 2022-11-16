@@ -1,3 +1,11 @@
+@media only screen and (max-width: 768px) 
+    /* For mobile phones: */ {
+        .ball {
+        min-width: 50px; 
+        max-width: 100px; 
+        }
+    }
+
 * {
     margin: 0;
     padding: 0;
@@ -32,8 +40,6 @@
 .partOne {
     background-color: #7EDFFD;
     border: solid #7EDFFD 1px;
-
-   
 }
 
 .buttonContainer {
@@ -66,6 +72,32 @@ button {
     width: 25%;
     margin-right: 25px;
     align-items: flex-end;   
+}
+
+.partTwo {
+    background-color: #9EFC87;
+    border: solid #fc87ea 1px;
+}
+
+.animation {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} 
+
+.dog {
+    width: 70%;
+    height: 70%;
+    border: white solid 1px;
+}
+
+.ball {
+    width: 30%;
+    height: 30%;
+    padding:  0 20px;
+    border: violet 1px solid;
+    display: flex;
+    align-self: flex-end;
 }
 
 /* .cloudOne :last-child {
