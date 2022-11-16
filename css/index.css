@@ -1,6 +1,8 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat";
 }
 
 /*header*/
@@ -15,9 +17,62 @@
 }
 
 .siteIdentity img {
-    width: 80px;
+    width: 200px;
 }
 
+/*main*/
+
+/* section {
+    background: url(../image/fondo.png) no-repeat center/cover;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+} */
+
+.partOne {
+    background-color: #7EDFFD;
+    border: solid #7EDFFD 1px;
+
+   
+}
+
+.buttonContainer {
+    display: flex;
+    justify-content: center;
+    padding-top: 20px ;
+}
+
+button {
+    color: #000;
+    font-weight: bold;
+    background-color: #ff66c4;
+    border-radius: 4px;
+    padding: 5px;
+    border: solid black 1px;
+}
+
+.clouds {
+    display: flex;
+    justify-content: space-between;
+}
+
+.cloudOne {
+    width: 40%;
+    margin-left: -20px;
+    align-items: flex-start;
+}
+
+.cloudTwo {
+    width: 25%;
+    margin-right: 25px;
+    align-items: flex-end;   
+}
+
+/* .cloudOne :last-child {
+    align-items: flex-end;
+    width: 20%;
+    margin-right: 20px;
+} */
 /*footer*/
 
 footer {
