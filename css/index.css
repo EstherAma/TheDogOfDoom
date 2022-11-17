@@ -1,8 +1,41 @@
- @media only screen and (max-width: 768px) 
+@media only screen and (max-width: 768px) 
     /*For mobile phones: */ {
 
-        .animation {
+        .mainHeader {
+            max-height: 80px;
+        }
+
+        .siteIdentity img {
+            max-width: 200px;
+        }
+
+        .buttonContainer {
+            max-height: 40px;
+            padding-top: 0px!important;
+        }
+
+        button {
+            font-size: 17px!important;
+        }
+
+        .partOne{
             max-height: 200px;
+        }
+        .clouds {
+            max-height: 150px;
+            padding-bottom: 10px;
+        }
+        .cloudOne { 
+            max-height: 117px;
+            padding-top: 20px;
+        }
+
+        .cloudTwo {
+            max-height: 70px;
+        }
+
+        .animation {
+            max-height: 180px;
         }
 
         .ball {
@@ -13,8 +46,15 @@
             max-width: 200px;     
         }
 
+        .partThree {
+            max-height: 120px;
+        }
         .coders img {
             max-height: 80px;
+        }
+
+        .partFour {
+            max-height: 222px;
         }
 
         .kennel {
@@ -25,7 +65,7 @@
             max-height: 175px;
         }
 
-       /* .kennel {
+    /* .kennel {
             max-width: auto;
         }*/
     } 
@@ -46,10 +86,11 @@
     display: flex;
     padding: 5px;
     justify-content: center;
+    height: 150px;
 }
 
 .siteIdentity img {
-    width: 200px;
+    width: 70%;
 }
 
 /*main*/
@@ -61,39 +102,49 @@
     position: absolute;
 } */
 
-.partOne {
+.partOne.partOne {
     background-color: #7EDFFD;
     border: solid #7EDFFD 1px;
+    height: 400px;
 }
 
 .buttonContainer {
+    border: 1px rgb(12, 104, 3) solid;
     display: flex;
     justify-content: center;
-    padding-top: 20px ;
+    align-items: center;
+    height: 125px;
+    padding-top: 35px ;
 }
 
 button {
     color: #000;
     font-weight: bold;
+    font-size: 2.5vw;
     background-color: #ff66c4;
     border-radius: 4px;
-    padding: 5px;
+    padding: 8px;
     border: solid black 1px;
 }
 
 .clouds {
+    border: gray 1px solid;
     display: flex;
     justify-content: space-between;
+    height: 250px;
 }
 
 .cloudOne {
-    width: 40%;
+    border: #000 1px solid;
+    height: 80%;
     margin-left: -20px;
     align-items: flex-start;
+    align-self: flex-end;
 }
 
 .cloudTwo {
-    width: 25%;
+    border: #000 1px solid;
+    height: 50%;
     margin-right: 25px;
     align-items: flex-end;   
 }
