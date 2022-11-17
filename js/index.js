@@ -41,3 +41,12 @@ function free() {
 
 let boton = document.getElementById("btn");
 boton.addEventListener("click", free);
+
+function showFreeCoders(){
+  let screen = ''
+  coders.forEach(item =>{
+      screen += `<li>${item.name}</li>`
+  })
+
+  document.getElementById("coders").innerHTML = screen
+}
