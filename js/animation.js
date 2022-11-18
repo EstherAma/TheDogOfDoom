@@ -4,19 +4,19 @@ let timer = setInterval(function() {
   // ¿Cuánto tiempo pasó desde el principio?
     let timePassed = Date.now() - start;
 
-    if (timePassed >= 5200) {
-    clearInterval(timer); // terminar la animación después de 5,2 segundos
+    if (timePassed >= 2000) {
+    clearInterval(timer); // terminar la animación después de 2 segundos
     return;
     }
 
   // dibujar la animación en el momento timePassed
     moveCoder(timePassed);
 
-}, 20);
+}, 40);
 
-// mientras timePassed va de 0 a 5200
-// left obtiene valores de 0px a 1040px
+// mientras timePassed va de 0 a 2000
+// left obtiene valores de 0px a 400px
 function moveCoder(timePassed) {
-    coder.style.left = timePassed / 5 + 'px';
+    coder.style.left = timePassed / 3 + 'px';
     coder.style.bottom = timePassed / -5 + 'px';
 }
