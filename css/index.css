@@ -189,6 +189,7 @@ button {
     border: rgb(13, 13, 13) 1px solid;
     display: flex;
     align-self: baseline;
+    margin-left: 400px;
 }
 
 .blackHairedCoder {
