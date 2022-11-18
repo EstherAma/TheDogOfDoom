@@ -50,7 +50,7 @@ function freeCoders() {
 function showBallList() {
     let screen = "" // inicializar una cadena vacía
     for (let index = 0; index < coders.length; index++) {
-        screen += `<li>${coders[index]}</li>` // += añade a la cadena
+        screen += `<option>${coders[index]}</option>` // += añade a la cadena
     }
 
     document.getElementById("ballList").innerHTML = screen
@@ -63,7 +63,7 @@ function addToKennel(coders) {
 function showKennelList() {
     let newScreen = ""
     for (let index = 0; index < coders.length; index++) {
-        screen += `<li>${coders[index]}</li>`
+        screen += `<option>${coders[index]}</option>`
     }
 
     document.getElementById("kennelList").innerHTML = newScreen
