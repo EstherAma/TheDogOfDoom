@@ -29,10 +29,10 @@ let coders = [
 let kennel = [];
 
 let button = document.getElementById("btn");
-button.addEventListener("click", free);
+button.addEventListener("click", free); // Escucha de eventos. Un click. Que queréis que pase cuando el ratón pasa por encima.
 showBallList(); // llamamos a la función para mostrar la lista por primera vez. Para que salga cuando entramos en la página
 
-function free() {
+function freeCoders() {  //cambiar coders
     
     let randomIndex = coders[Math.round(Math.random() * (coders.length - 1))]; // (coders.length - 1) si no pongo paréntesis se ejecuta primero la multiplicación
     for (let index = 0; index < coders.length; index++) {    // round: redondea al más cercano. Ceil: redondea hacia arriba. Floor: redondea hacia abajo.
