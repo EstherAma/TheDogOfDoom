@@ -1,52 +1,72 @@
 let coders = [
-  "Paula",
-  "Adriana",
-  "Veronika",
-  "Lola G",
-  "Natalia",
-  "Elena",
-  "Noa",
-  "Ana",
-  "Vero",
-  "Carmen",
-  "Paloma P",
-  "Raquel",
-  "Esther",
-  "Lola N",
-  "Alba",
-  "Sierri",
-  "Bea",
-  "Alesia",
-  "Carmen G",
-  "Camila",
-  "Leidy",
-  "Himo",
-  "Paloma B",
-  "Flor",
-  "Sandra",
+    "Paula",
+    "Adriana",
+    "Veronika",
+    "Lola G",
+    "Natalia",
+    "Elena",
+    "Noa",
+    "Ana",
+    "Vero",
+    "Carmen",
+    "Paloma R",
+    "Raquel",
+    "Esther",
+    "Lola N",
+    "Alba" ,
+    "Sierri",
+    "Bea",
+    "Alesia",
+    "Carmen G",
+    "Camila",
+    "Leidy",
+    "Himo",
+    "Paloma B",
+    "Flor",
+    "Sandra"
 ];
 
-let freeCoders = [];
+let kennel = [];
+
+let button = document.getElementById("btn");
+button.addEventListener("click", free);
+showBallList(); // llamamos a la función para mostrar la lista por primera vez. Para que salga cuando entramos en la página
 
 function free() {
-  let randomIndex = coders[Math.round(Math.random() * coders.length)];
-  for (let i = 0; i < coders.length; i++) {
-    if (coders[i] === randomIndex) {
-      coders.splice(i, 1);
+    
+    let randomIndex = coders[Math.round(Math.random() * (coders.length - 1))]; // (coders.length - 1) si no pongo paréntesis se ejecuta primero la multiplicación
+    for (let index = 0; index < coders.length; index++) {    // round: redondea al más cercano. Ceil: redondea hacia arriba. Floor: redondea hacia abajo.
+        if (coders[index] === randomIndex) { 
+            /* = atribuye el valor de la derecha al mismo de la izquierda. Un solo igual sería asignar
+            === el mismo valor con el mismo tipo. El doble y el triple para comparara, condicionales
+            == el mismo valor pero con distinto tipo*/ //por convencción siempre poner tres. Por seguridad.
+        coders.splice(index, 1); // splice: pasamos obligatoriamente dos parámetros separados por coma. Uno es el número del índice por donde queremos empezar, en nuestro es todo el index porque es aleatorio. El segundo es la cantidad de valores que queremos sacar.
+        console.log(randomIndex); // ver en consola
+        }
+            addToKennel(coders);
+            showBallList();
+            showKennelList();
+        }
     }
-  }
-  /*  return randomIndex; */
-  console.log(randomIndex);
+
+function showBallList() {
+    let screen = "" // inicializar una cadena vacía
+    for (let index = 0; index < coders.length; index++) {
+        screen += `<li>${coders[index]}</li>` // += añade a la cadena
+    }
+
+    document.getElementById("ballList").innerHTML = screen
 }
 
-let boton = document.getElementById("btn");
-boton.addEventListener("click", free);
+function addToKennel(coders) {
+    kennel.unshift(coders) // poner la primera de la lista
+}
 
-function showFreeCoders(){
-  let screen = ''
-  coders.forEach(item =>{
-      screen += `<li>${item.name}</li>`
-  })
+function showKennelList() {
+    let newScreen = ""
+    for (let index = 0; index < coders.length; index++) {
+        screen += `<li>${coders[index]}</li>`
+    }
 
-  document.getElementById("coders").innerHTML = screen
+    document.getElementById("kennelList").innerHTML = newScreen
 }
