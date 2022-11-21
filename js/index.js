@@ -26,27 +26,41 @@ let coders = [
   "Sandra",
 ];
 
-let freeCoders = [];
+//Creamos array vacío para pasar las coders desde el primer array
+let kennel = [];
 
-function free() {
-  let randomIndex = coders[Math.round(Math.random() * coders.length)];
-  for (let i = 0; i < coders.length; i++) {
-    if (coders[i] === randomIndex) {
-      coders.splice(i, 1);
-    }
-  }
-  /*  return randomIndex; */
-  console.log(randomIndex);
+let button = document.getElementById("btn");
+button.addEventListener("click", freeCoders);
+
+showBallList();
+
+function freeCoders() {
+  let randomIndex = Math.round(Math.random() * (coders.length - 1));
+
+  const freed = coders.splice(randomIndex, 1);
+  addToKennel(freed);
+  showBallList();
+  showKennelList();
 }
 
-let boton = document.getElementById("btn");
-boton.addEventListener("click", free);
+function showBallList() {
+  let screen = "";
+  for (let index = 0; index < coders.length; index++) {
+    screen += `<li>${coders[index]}</li>`;
+  }
 
-function showFreeCoders(){
-  let screen = ''
-  coders.forEach(item =>{
-      screen += `<li>${item.name}</li>`
-  })
+  document.getElementById("ballList").innerHTML = screen;
+}
 
-  document.getElementById("coders").innerHTML = screen
+function addToKennel(freed) {
+  kennel.unshift(freed);
+}
+
+function showKennelList() {
+  let screen = "";
+  for (let index = 0; index < kennel.length; index++) {
+    screen += `<li>${kennel[index]}</li>`;
+  }
+
+  document.getElementById("kennelList").innerHTML = screen;
 }
