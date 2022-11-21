@@ -40,6 +40,7 @@ function freeCoders() {
   addToKennel(freed);
   showBallList();
   showKennelList();
+  finalScreen();
 }
 function showBallList() {
   let screen = "";
@@ -61,4 +62,10 @@ function showKennelList() {
   }
 
   document.getElementById("kennelList").innerHTML = screen;
+}
+
+function finalScreen() {
+  if (kennel.length === 26) {
+    confirm("There are no more coders left. Do you want to refill the ball?");
+  }
 }
