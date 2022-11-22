@@ -1,6 +1,20 @@
+@media only screen and (max-width: 768px) 
+    /* For mobile phones: */ {
+        .ball {
+        min-width: 50px; 
+        max-width: 100px; 
+        }
+
+        .kennel {
+            max-width: auto;
+        }
+    }
+
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat";
 }
 
 /*header*/
@@ -15,9 +29,112 @@
 }
 
 .siteIdentity img {
-    width: 80px;
+    width: 200px;
 }
 
+/*main*/
+
+/* section {
+    background: url(../image/fondo.png) no-repeat center/cover;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+} */
+
+.partOne {
+    background-color: #7EDFFD;
+    border: solid #7EDFFD 1px;
+}
+
+.buttonContainer {
+    display: flex;
+    justify-content: center;
+    padding-top: 20px ;
+}
+
+button {
+    color: #000;
+    font-weight: bold;
+    background-color: #ff66c4;
+    border-radius: 4px;
+    padding: 5px;
+    border: solid black 1px;
+}
+
+.clouds {
+    display: flex;
+    justify-content: space-between;
+}
+
+.cloudOne {
+    width: 40%;
+    margin-left: -20px;
+    align-items: flex-start;
+}
+
+.cloudTwo {
+    width: 25%;
+    margin-right: 25px;
+    align-items: flex-end;   
+}
+
+.partTwo {
+    background-color: #9EFC87;
+    border: solid #fc87ea 1px;
+}
+
+.animation {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} 
+
+.dog {
+    width: 70%;
+    height: 70%;
+    border: white solid 1px;
+}
+
+.ball {
+    width: 30%;
+    height: 30%;
+    padding:  0 20px;
+    border: violet 1px solid;
+    display: flex;
+    align-self: flex-end;
+}
+
+.partThree {
+    border: rgb(238, 224, 130) 1px solid;
+    background-color: #9EFC87;
+}
+
+.blackHairedCoder {
+    width: 30%;
+    border: rgb(14, 143, 212) 1px solid;
+}
+
+.partFour {
+    background-color: #9EFC87;
+    border: rgb(232, 66, 1) 1px solid;
+}
+
+.listDisplays {
+    border: rgb(29, 1, 119) 1px solid;
+    display: flex;
+    justify-content: space-between;
+}
+
+.bigBall {
+    border: rgb(83, 12, 31) 1px solid;
+    width: 45%;
+}
+
+.kennel {
+    width: auto;
+    height: auto;
+    border: rgb(83, 12, 31) 1px solid;
+}
 /*footer*/
 
 footer {
