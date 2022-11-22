@@ -1,4 +1,4 @@
-@media only screen and (max-width: 768px) 
+@media only screen and (max-width: 480px) 
     /*For mobile phones: */ {
 
         .mainHeader {
@@ -39,7 +39,7 @@
         }
 
         .ball {
-            max-width: 100px; 
+            max-height: 100px; 
         }
 
         .dog {
@@ -53,17 +53,35 @@
             max-height: 80px;
         }
 
+        /*.blackHairedCoder {
+            position: absolute!important;
+            transition: all 1s linear!important;
+            -webkit-transition: all 1s linear!important;
+            -moz-transition: all 1s linear!important; 
+            -o-transition: all 1s linear!important;
+        }
+
+        .moveDiagonal {
+            transform: translate(30px,20px)!important;
+            -webkit-transform: translate(30px,20px)!important;
+            -o-transform: translate(30px,20px)!important; 
+            -moz-transform: translate(30px,20px)!important;
+        }*/
+
         .partFour {
             max-height: 222px;
         }
 
         .kennel {
+            background-image: url(../image/pruebas/casetaMediaQuery.png)!important;
             max-height: 175px;
+            max-width: 175px;
         }
 
         .bigBall {
-            background-image: url(../image/pruebas/ballGrande.png);
+            background-image: url(../image/pruebas/ballMediaQuery.png)!important;
             max-height: 175px;
+            max-width: 175px;
         }
 
         }
@@ -171,8 +189,7 @@ button {
 }
 
 .ball {
-    width: auto;
-    height: auto;
+    height: 50%;
     padding:  0 20px;
     border: violet 1px solid;
     display: flex;
@@ -238,8 +255,8 @@ button {
 .kennel {
     background-image: url(../image/pruebas/caseta.png);
     border: rgb(83, 12, 31) 1px solid;
-    height: 250px;
-    width: 250px;
+    height: 245px;
+    width: 245px;
 }
 
 .ballList {
@@ -247,16 +264,10 @@ button {
     flex-direction: row;
     flex-wrap: wrap;
     height: 250px;
-}
-
-ul {
-    border: #ff66c4 1px solid;
-    height: 250px;
     font-family: "Montserrat";
     font-weight: bold;
     font-size: 1vw;
     color: rgb(7, 7, 7);
-    list-style: none;
 }
 
 /*footer*/
