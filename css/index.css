@@ -197,6 +197,23 @@ button {
 .blackHairedCoder {
     max-height: 150px;
     border: rgb(14, 143, 212) 1px solid;
+    position: absolute;
+    transition: all 2s linear;
+    -webkit-transition: all 2s linear; /** Chrome & Safari **/
+    -moz-transition: all 2s linear; /** Firefox **/
+    -o-transition: all 2s linear; /** Opera **/
+}
+
+.bottle {
+    top: 45%;
+    left: 44%;
+}
+
+#coder:hover .moveDiagonal {
+    transform: translate(650px,450px);
+    -webkit-transform: translate(650px,450px);
+    -o-transform: translate(650px,450px); 
+    -moz-transform: translate(650px,450px);
 }
 
 .partFour {
