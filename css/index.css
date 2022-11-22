@@ -62,13 +62,15 @@
         }
 
         .bigBall {
+            background-image: url(../image/pruebas/ballGrande.png);
             max-height: 175px;
+        }
+
         }
 
     /* .kennel {
             max-width: auto;
         }*/
-    } 
 
 * {
     margin: 0;
@@ -203,22 +205,43 @@ button {
 }
 
 .listDisplays {
-    border: rgb(29, 1, 119) 1px solid;
+    border: rgb(29, 1, 119) 3px solid;
     display: flex;
     justify-content: space-around;
     height: 250px;
 }
 
 .bigBall {
+    background-image: url(../image/pruebas/ballGrande.png);
     border: rgb(83, 12, 31) 1px solid;
-    width: auto;
+    height: 250px;
+    width: 250px;
 }
 
 .kennel {
-    width: auto;
-    height: auto;
+    background-image: url(../image/pruebas/caseta.png);
     border: rgb(83, 12, 31) 1px solid;
+    height: 250px;
+    width: 250px;
 }
+
+.ballList {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    height: 250px;
+}
+
+ul {
+    border: #ff66c4 1px solid;
+    height: 250px;
+    font-family: "Montserrat";
+    font-weight: bold;
+    font-size: 1vw;
+    color: rgb(7, 7, 7);
+    list-style: none;
+}
+
 /*footer*/
 
 footer {
