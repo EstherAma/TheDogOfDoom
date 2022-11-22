@@ -45,7 +45,7 @@ function freeCoders() {
 function showBallList() {
   let screen = "";
   for (let index = 0; index < coders.length; index++) {
-    screen += `<li>${coders[index]}</li>`;
+    screen += `<div>${coders[index]}</div>`;
   }
 
   document.getElementById("ballList").innerHTML = screen;
@@ -58,7 +58,7 @@ function addToKennel(freed) {
 function showKennelList() {
   let screen = "";
   for (let index = 0; index < kennel.length; index++) {
-    screen += `<li>${kennel[index]}</li>`;
+    screen += `<div>${kennel[index]}</div>`;
   }
 
   document.getElementById("kennelList").innerHTML = screen;

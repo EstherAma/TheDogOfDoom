@@ -84,6 +84,10 @@
             max-width: 175px;
         }
 
+        .iconBox {
+            margin-left: 10px!important;
+        }
+
         }
 
     /* .kennel {
@@ -259,15 +263,24 @@ button {
     width: 245px;
 }
 
-.ballList {
+#ballList {
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
+    flex-wrap: wrap!important;
     height: 250px;
-    font-family: "Montserrat";
     font-weight: bold;
-    font-size: 1vw;
-    color: rgb(7, 7, 7);
+    font-size: 1.5vw;
+    color: white;
+}
+
+#kennelList {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap!important;
+    height: 250px;
+    font-weight: bold;
+    font-size: 1.5vw;
+    color: white;
 }
 
 /*footer*/
