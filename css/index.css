@@ -16,6 +16,7 @@
 
         button {
             font-size: 17px!important;
+            left: 50;
         }
 
         .partOne{
@@ -52,9 +53,9 @@
         .coders img {
             max-height: 80px;
         }
-
-        /*.blackHairedCoder {
-            position: absolute!important;
+/*
+        .blackHairedCoder {
+            position: relative!important;
             transition: all 1s linear!important;
             -webkit-transition: all 1s linear!important;
             -moz-transition: all 1s linear!important; 
@@ -62,12 +63,12 @@
         }
 
         .moveDiagonal {
-            transform: translate(30px,20px)!important;
-            -webkit-transform: translate(30px,20px)!important;
-            -o-transform: translate(30px,20px)!important; 
-            -moz-transform: translate(30px,20px)!important;
-        }*/
-
+            transform: translate(20px,10px)!important;
+            -webkit-transform: translate(20px,10px)!important;
+            -o-transform: translate(20px,10px)!important; 
+            -moz-transform: translate(20px,10px)!important;
+        }
+*/
         .partFour {
             max-height: 222px;
             max-width: 480px;
@@ -160,7 +161,7 @@
     justify-content: center;
     align-items: center;
     height: 125px;
-    padding-top: 35px ;
+    padding-top: 35px;
 }
 
 button {
@@ -173,6 +174,7 @@ button {
     border: solid black 1px;
     box-shadow: 6px 9px 5px #457c8d;
     cursor:pointer;
+    position: fixed;
 }
 
 
@@ -235,7 +237,7 @@ button {
 
 .blackHairedCoder {
     max-height: 150px;
-    position: absolute;
+    position: relative;
     transition: all 2s linear;
     -webkit-transition: all 2s linear; /** Chrome & Safari **/
     -moz-transition: all 2s linear; /** Firefox **/
@@ -248,10 +250,10 @@ button {
 }
 
 #coder:hover .moveDiagonal {
-    transform: translate(650px,450px);
-    -webkit-transform: translate(650px,450px);
-    -o-transform: translate(650px,450px); 
-    -moz-transform: translate(650px,450px);
+    transform: translate(660px,480px);
+    -webkit-transform: translate(660px,480px);
+    -o-transform: translate(660px,480px); 
+    -moz-transform: translate(660px,480px);
 }
 
 .partFour {
