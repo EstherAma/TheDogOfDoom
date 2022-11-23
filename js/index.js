@@ -37,6 +37,7 @@ function freeCoders() {
   let randomIndex = Math.round(Math.random() * (coders.length - 1));
 
   const freed = coders.splice(randomIndex, 1);
+  dogBarking();
   addToKennel(freed);
   showBallList();
   showKennelList();
@@ -68,4 +69,9 @@ function finalScreen() {
   if (kennel.length === 26) {
     confirm("There are no more coders left. Do you want to refill the ball?");
   }
+}
+
+function dogBarking() {
+  let barking = document.getElementById("bark")
+  barking.play()
 }
