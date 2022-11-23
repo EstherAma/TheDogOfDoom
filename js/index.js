@@ -28,7 +28,7 @@ let coders = [
 
 let kennel = [];
 
-let button = document.getElementById("btn");
+const button = document.getElementById("btn");
 button.addEventListener("click", freeCoders);
 
 showBallList();
@@ -37,12 +37,14 @@ function freeCoders() {
   let randomIndex = Math.round(Math.random() * (coders.length - 1));
 
   const freed = coders.splice(randomIndex, 1);
+  moveCoder();
+  setTimeout(hideCoder, 2000);
   dogBarking();
   addToKennel(freed);
-  showBallList();
   showKennelList();
   finalScreen();
 }
+
 function showBallList() {
   let screen = "";
   for (let index = 0; index < coders.length; index++) {
@@ -71,7 +73,17 @@ function finalScreen() {
   }
 }
 
+function moveCoder() {
+  const coder = document.getElementById("coderOne")
+  coder.classList.add("moveDiagonal", "blackHairedCoder")
+}
+
+function hideCoder() {
+  const coder = document.getElementById("coderOne")
+  coder.classList.remove("moveDiagonal", "blackHairedCoder")
+}
+
 function dogBarking() {
-  let barking = document.getElementById("bark")
+  const barking = document.getElementById("bark")
   barking.play()
 }

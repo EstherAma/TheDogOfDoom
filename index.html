@@ -1,78 +1,71 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/index.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap">
-    <link rel="icon" type="image/x-icon" href="./image/Icons/dog icon.png">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/index.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap"/>
+    <link rel="icon" type="image/x-icon" href="./image/Icons/dog icon.png" />
     <title>The Dog of Doom!</title>
+  </head>
 
-    <style>
-        #coder {
-            position: relative;
-            cursor: pointer;
-        }
-    </style>
-</head>
-
-<body>
+  <body>
     <header class="mainHeader">
-        <div class="siteIdentity"><a><img src="./image/logo final.png" alt="logo"></a></div>
+      <div class="siteIdentity">
+        <a><img src="./image/logo final.png" alt="logo" /></a>
+      </div>
     </header>
 
     <main>
-        <section class="partOne">
-            <div class="buttonContainer"><button id="btn" type="button">START</button></div>
-            <audio id="bark" src="./media/sfx-animal-dog2.mp3"></audio>
-            <div class="clouds">
-                <img class="cloudOne" src="./image/pruebas/smallCloud.png" alt="Cloud">
-                <img class="cloudTwo" src="./image/pruebas/smallCloud.png" alt="Cloud">
-            </div>
-        </section>
-        <section class="partTwo">
-            <div class="animation">
-                <img class="ball" src="./image/pruebas/ball1SmallSize.gif" alt="Ball">
-                <img class="dog" src="./image/pruebas/doggyAnimation.gif" alt="doggy">
-            </div>
-        </section>
+      <section class="partOne">
+        <div class="buttonContainer">
+          <button id="btn" type="button">START</button>
+        </div>
+        <audio id="bark" src="./media/sfx-animal-dog2.mp3"></audio>
+        <div class="clouds">
+          <img class="cloudOne" src="./image/pruebas/smallCloud.png" alt="Cloud"/>
+          <img class="cloudTwo" src="./image/pruebas/smallCloud.png" alt="Cloud"/>
+        </div>
+      </section>
+      <section class="partTwo">
+        <div class="animation">
+          <img class="ball" src="./image/pruebas/ball1SmallSize.gif" alt="Ball"/>
+          <img class="dog" src="./image/pruebas/doggyAnimation.gif" alt="doggy"/>
+        </div>
+      </section>
 
-        <section class="partThree">
-            <div class="coders" id="coder">
-                <img class="blackHairedCoder bottle moveDiagonal" src="./image/pruebas/14.png" alt="Ramdom Coder picture">
-            </div>
-        </section>
+      <section class="partThree">
+        <div class="coders">
+          <img id="coderOne" class="blackHairedCoder bottle" src="./image/pruebas/14.png" alt="Random Coder picture"/>
+        </div>
+      </section>
 
-        <section class="partFour">
-            <div class="listDisplays">
-                <div class="bigBall" img src="./image/pruebas/ballGrande.png" width="200px"> 
-                    <div id="ballList">
-
-                    </div>
-                </div>
-                <div class="kennel" img src="./image/pruebas/caseta.png" width="200px"> 
-                    <div id="kennelList"></div>
-                </div>
-            </div>
-            
-        </section>
+      <section class="partFour">
+        <div class="listDisplays">
+          <div class="bigBall">
+            <div id="ballList"></div>
+          </div>
+          <div class="kennel">
+            <div id="kennelList"></div>
+          </div>
+        </div>
+      </section>
     </main>
 
     <footer>
-        <div class="iconBox">
-            <img class="mediaIcons" src="./image/Icons/twitter.png" alt="Twitter icon">
-            <img class="mediaIcons" src="./image/Icons/Instagram.png" alt="Instagram icon">
-            <img class="mediaIcons" src="./image/Icons/facebook.png" alt="Facebook icon">
-        </div>
-        <div class="copyright">
-            <p> &copy; 2022</p>
-        </div>
+      <div class="iconBox">
+        <img class="mediaIcons" src="./image/Icons/twitter.png" alt="Twitter icon"/>
+        <img class="mediaIcons" src="./image/Icons/Instagram.png" alt="Instagram icon"/>
+        <img class="mediaIcons" src="./image/Icons/facebook.png" alt="Facebook icon"/>
+      </div>
+      <div class="copyright">
+        <p>&copy; 2022</p>
+      </div>
     </footer>
-    
-<script src="./js/animation.js"></script>
 
-<script src="./js/index.js"></script>   
+    <script src="./js/animation.js"></script>
 
-</body>
+    <script src="./js/index.js"></script>
+  </body>
 </html>
