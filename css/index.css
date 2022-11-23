@@ -70,18 +70,41 @@
 
         .partFour {
             max-height: 222px;
+            max-width: 480px;
+        }
+
+        .listDisplays {
+            height: 199px!important;
         }
 
         .kennel {
             background-image: url(../image/pruebas/casetaMediaQuery.png)!important;
-            max-height: 175px;
-            max-width: 175px;
+            max-height: 166px;
+            max-width: 172px;
         }
 
         .bigBall {
             background-image: url(../image/pruebas/ballMediaQuery.png)!important;
             max-height: 175px;
-            max-width: 175px;
+            max-width: 173px;
+        }
+
+        #ballList {
+            align-content: center;
+            column-gap: 5px;
+            margin-top: 40px!important;
+            margin-left: 5px!important;
+            height: 110px!important;
+            font-size: 8.5px!important;
+        }
+
+        #kennelList {
+            align-content: flex-start!important;
+            column-gap: 3px!important;
+            margin-left: 35px!important;
+            margin-top: 40px!important;
+            height: 110px!important;
+            font-size: 8.5px!important;
         }
 
         .iconBox {
@@ -198,6 +221,7 @@ button {
 
 .partThree {
     background-color: #9EFC87;
+    border: 1px solid #9EFC87;
     height: 300px;
     display: flex;
     align-items: center;
@@ -232,24 +256,25 @@ button {
 
 .partFour {
     background-color: #9EFC87;
+    border: 1px solid #9EFC87;
 }
 
 .listDisplays {
     display: flex;
     justify-content: space-around;
-    height: 250px;
+    height: 400px;
 }
 
 .bigBall {
-    background-image: url(../image/pruebas/ballGrande.png);
-    height: 249px;
-    width: 247px;
+    background-image: url(../image/pruebas/ballGrande2.png);
+    height: 399px;
+    width: 396px;
 }
 
 .kennel {
-    background-image: url(../image/pruebas/caseta.png);
-    height: 241px;
-    width: 249px;
+    background-image: url(../image/pruebas/caseta2.png);
+    height: 384px;
+    width: 399px;
 }
 
 #ballList {
@@ -260,10 +285,11 @@ button {
     align-content: center;
     column-gap: 15px;
     margin-top: 60px;
-    height: 160px;
+    height: 270px;
     font-weight: bold;
-    font-size: 1.5vw;
+    font-size: 1.2vw;
     color: white;
+    text-shadow: 2px 2px 1px rgb(54, 54, 54);
 }
 
 #kennelList {
@@ -272,14 +298,15 @@ button {
     flex-wrap: wrap;
     /* justify-content: space-between; */
     align-content: center;
-    column-gap: 15px;
+    column-gap: 25px;
     margin-top: 100px;
-    margin-left: 20px;
+    margin-left: 100px;
     width: 230px;
-    height: 120px;
+    height: 260px;
     font-weight: bold;
-    font-size: 1.5vw;
+    font-size: 1.2vw;
     color: white;
+    text-shadow: 2px 2px 1px rgb(54, 54, 54);
 }
 
 /*footer*/
@@ -291,6 +318,7 @@ footer {
     align-content: flex-end;
     align-items: center;
     background-color: #9EFC87;
+    border: 2px solid #9EFC87;
 }
 
 .iconBox {
