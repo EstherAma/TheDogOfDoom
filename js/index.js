@@ -40,6 +40,7 @@ function freeCoders() {
   moveCoder();
   setTimeout(hideCoder, 2000);
   dogBarking();
+  showBallList();
   addToKennel(freed);
   showKennelList();
   finalScreen();
